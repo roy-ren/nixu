@@ -14,6 +14,8 @@
     shell = pkgs.zsh;
   };
 
+  nix.settings.trusted-users = ["root" "roy"];
+
   programs = {
     zsh.enable = true;
   };

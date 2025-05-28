@@ -34,7 +34,7 @@ lint:
 # Check nix flake
 [group('dev')]
 check:
-  nix flake check --show-trace
+  nix flake check --show-trace --all-systems
 
 # Manually enter dev shell
 [group('dev')]
