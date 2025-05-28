@@ -16,6 +16,16 @@ update:
 run:
   nix run
 
+#lagoon darwin-rebuild switch --flake ./#lagoon --show-trace
+[group('Main')]
+lagoon:
+  darwin-rebuild switch --flake ./#lagoon --show-trace
+
+# nixos-rebuild switch --flake ./#nixpad --show-trace
+[group('Main')]
+nixpad:
+  sudo nixos-rebuild switch --flake ./#nixpad --show-trace
+
 # Lint nix files
 [group('dev')]
 lint:
@@ -24,7 +34,7 @@ lint:
 # Check nix flake
 [group('dev')]
 check:
-  nix flake check
+  nix flake check --show-trace
 
 # Manually enter dev shell
 [group('dev')]
