@@ -18,6 +18,8 @@
 
       git
       lazygit
+
+      home-manager
     ];
 
     shellHook = ''

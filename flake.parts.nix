@@ -27,7 +27,9 @@
     # flake.parts.nix 中的 flake.homeConfigurations
     homeConfigurations."roy@nixpad" = inputs.home-manager.lib.homeManagerConfiguration {
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
-      modules = [./users/roy.nix];
+      modules = [
+        ./users/roy.nix
+      ];
 
       extraSpecialArgs = {
         inherit inputs;

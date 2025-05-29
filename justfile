@@ -26,6 +26,11 @@ lagoon:
 nixpad:
   sudo nixos-rebuild switch --flake ./#nixpad --show-trace
 
+# nix home manager
+[group('Main')]
+home:
+  home-manager switch --flake .#roy@nixpad --show-trace -b backup
+
 # Lint nix files
 [group('dev')]
 lint:

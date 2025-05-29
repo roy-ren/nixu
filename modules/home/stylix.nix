@@ -3,8 +3,10 @@
   pkgs,
   ...
 }: {
+  stylix.enable = true;
+  # stylix.image = inputs.self + "/path/to/image.png";
   imports = [
-    inputs.stylix.homeManagerModules.stylix
+    inputs.stylix.homeModules.stylix
   ];
 
   stylix.targets = {
