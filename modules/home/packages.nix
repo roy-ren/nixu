@@ -15,6 +15,10 @@
     sd
     tree
     gnumake
+
+    nushell
+    starship
+    tmux
   ];
 
   # Programs natively supported by home-manager.
@@ -23,10 +27,6 @@
     fzf.enable = true;
 
     ghostty.enable = true;
-
-    starship = {
-      enable = true;
-    };
 
     zoxide.enable = true;
   };

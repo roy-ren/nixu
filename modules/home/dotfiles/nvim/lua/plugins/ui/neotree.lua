@@ -14,6 +14,7 @@ return {
       "<C-n>",
       function()
         vim.cmd "Neotree left toggle reveal"
+        -- vim.cmd "Neotree float toggle reveal_force_cwd"
       end,
       mode = "n",
       desc = "Toggle NeoTree in current directory",
@@ -24,6 +25,7 @@ return {
       "<leader>e",
       function()
         vim.cmd "Neotree left reveal"
+        -- vim.cmd "Neotree float toggle reveal_force_cwd"
       end,
       mode = "n",
       desc = "Reveal file in NeoTree",

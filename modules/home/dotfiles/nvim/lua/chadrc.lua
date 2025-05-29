@@ -5,7 +5,7 @@ local options = {
     hl_override = {},
     integrations = {},
     changed_themes = {},
-    transparency = false,
+    transparency = true,
     theme_toggle = { "vscode_dark", "one_light" },
   },
 
@@ -20,6 +20,7 @@ local options = {
       },
     },
 
+    hl_override = { Comment = { italic = true } },
     telescope = { style = "borderless" }, -- borderless / bordered
 
     statusline = {

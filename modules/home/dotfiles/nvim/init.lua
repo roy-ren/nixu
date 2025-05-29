@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 -- nvchad UI
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46_cache/"
+vim.g.codeium_os = "Darwin"
+vim.g.codeium_arch = "aarch64"
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -16,7 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 ---@diagnostic disable-next-line: different-requires
 require("lazy").setup {
   -- { import = "plugins" },
-  require("plugins").specs
+  require("plugins").specs,
 }
 
 for _, v in ipairs(vim.fn.readdir(vim.g.base46_cache)) do

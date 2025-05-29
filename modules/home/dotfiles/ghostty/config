@@ -1,9 +1,29 @@
-font-size = 25
-background-blur-radius = 20
+# 汉字支持较好
+font-family = "Maple Mono NF CN"
+# font-family = "Hack Nerd Font Mono"
+# font-family = "FiraCode Nerd Font Mono"
+
+font-size = 24
+adjust-cell-height = 15%
+
+# keys
 mouse-hide-while-typing = true
 macos-option-as-alt = true
+
+# theme
 # theme = Tomorrow Night
-theme = xcodedarkhc
+# theme = xcodedarkhc
 theme = SpaceGray Eighties
-# background-opacity = 0.85
-# background-blur-radius = 20 
+
+# background
+background-opacity = 0.45
+background-blur-radius = 10 
+
+
+# Window
+window-decoration = none
+window-padding-x = 4,4
+window-padding-y = 0,0
+
+# shell
+shell-integration = zsh

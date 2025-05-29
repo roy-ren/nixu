@@ -1,31 +1,6 @@
 -- plugins/init.lua
 local M = {}
 
--- M.specs = {
---   require "plugins.code.cmp",
---   require "plugins.code.format",
---   require "plugins.code.leap",
---   require "plugins.code.replace",
---   require "plugins.code.ufo",
---
---   require "plugins.dev.test",
---   require "plugins.dev.todo",
---   require "plugins.dev.trouble",
---
---   require "plugins.lsp.config",
---   require "plugins.lsp.treesitter",
---
---   require "plugins.nav-utils.bqf",
---   require "plugins.nav-utils.harpoon",
---   require "plugins.nav-utils.snacks",
---   require "plugins.nav-utils.telescope",
---   require "plugins.nav-utils.which-key",
---
---   require "plugins.ui.mini",
---   require "plugins.ui.neotree",
---   require "plugins.ui.nvchad",
--- }
-
 -- 日志工具（兼容 Neovim API）
 local log = function(level, msg)
   local levels = { "DEBUG", "INFO", "WARN", "ERROR" }
@@ -54,7 +29,7 @@ local function find_plugin_specs()
 
     -- 生成 Lazy 规范
     table.insert(specs, { import = "plugins." .. mod_path })
-    log(2, "Discovered plugin spec: plugins." .. mod_path)
+    -- log(2, "Discovered plugin spec: plugins." .. mod_path)
   end
 
   handle:close()

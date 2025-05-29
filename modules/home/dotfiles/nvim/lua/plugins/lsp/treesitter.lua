@@ -39,6 +39,18 @@ return {
         "nix",
         "json",
         "javascript",
+        "markdown",
+        "markdown_inline",
+        "latex",
+        "html",
+        "markdown",
+        "css",
+        -- "norg",
+        "scss",
+        "svelte",
+        "tsx",
+        "typst",
+        "vue",
       },
 
       highlight = {
