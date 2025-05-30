@@ -11,6 +11,8 @@
     fira-code
     fira-code-symbols
     source-code-pro
+    # maple-mono-nf-cn
+    # font-family = "Maple Mono NF CN"
 
     nerd-fonts.fira-code
     nerd-fonts.fira-mono

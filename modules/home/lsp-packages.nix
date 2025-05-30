@@ -8,6 +8,7 @@
     # bash
     bash-language-server
     shfmt
+    latex2html
 
     nodejs
 
@@ -17,6 +18,8 @@
     stylua
     luarocks
     jq
+    tree-sitter
+    latex2html
 
     # swift
     sourcekit-lsp

@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     git
+    clang
+    gcc
     lazygit
 
     # wl-clipboard
@@ -10,5 +12,6 @@
     playerctl
 
     shadowsocks-rust
+    nushell
   ];
 }

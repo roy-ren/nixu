@@ -3,8 +3,9 @@
   config,
   ...
 }: let
-  name = "cb-001.jpg";
-  wp = "${config.home.homeDirectory}/nixu/modules/home/hypr/wallpapers/${name}";
+  # name = "cb-001.jpg";
+  name = "cabin.png";
+  wp = "${config.home.homeDirectory}/nixu/modules/home/hypr/wallpapers/otherWallpaper/gruvbox/${name}";
 in {
   services.hyprpaper = {
     enable = true;
@@ -13,7 +14,7 @@ in {
       splash = false;
       splash_offset = 2.0;
       preload = lib.mkDefault wp;
-      wallpaper = lib.mkDefault ", ${wp}";
+      wallpaper = lib.mkForce ", ${wp}";
     };
   };
 }

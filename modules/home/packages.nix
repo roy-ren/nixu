@@ -18,7 +18,6 @@
 
     nushell
     starship
-    tmux
   ];
 
   # Programs natively supported by home-manager.

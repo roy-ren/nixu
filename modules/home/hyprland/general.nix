@@ -17,21 +17,21 @@
       "HDMI-A-1,3840x2160@60,-480x-2100,1"
     ];
 
-    workspace = [
-      # 4k 显示器（HDMI-A-1）
-      "1, monitor:HDMI-A-1"
-      "2, monitor:HDMI-A-1"
-      "4, monitor:HDMI-A-1"
-      "5, monitor:HDMI-A-1"
-      "6, monitor:HDMI-A-1"
-
-      # 3K 显示器（DP-1）
-      "3, monitor:DP-1"
-      "7, monitor:DP-1"
-      "8, monitor:DP-1"
-      "9, monitor:DP-1"
-      "10, monitor:DP-1"
-    ];
+    # workspace = [
+    #   # 4k 显示器（HDMI-A-1）
+    #   "1, monitor:HDMI-A-1"
+    #   "2, monitor:HDMI-A-1"
+    #   "4, monitor:HDMI-A-1"
+    #   "5, monitor:HDMI-A-1"
+    #   "6, monitor:HDMI-A-1"
+    #
+    #   # 3K 显示器（DP-1）
+    #   "3, monitor:DP-1"
+    #   "7, monitor:DP-1"
+    #   "8, monitor:DP-1"
+    #   "9, monitor:DP-1"
+    #   "10, monitor:DP-1"
+    # ];
 
     dwindle = {
       preserve_split = true;

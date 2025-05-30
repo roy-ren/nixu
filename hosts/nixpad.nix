@@ -11,7 +11,7 @@
   users.users.roy = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager"];
-    shell = pkgs.zsh;
+    shell = pkgs.nushell;
   };
 
   xdg.portal.enable = true;
@@ -21,15 +21,4 @@
   services.dbus.enable = true;
 
   nix.settings.trusted-users = ["root" "roy"];
-
-  # home-manager.backupFileExtension = ".bak";
-
-  programs = {
-    zsh.enable = true;
-
-    hyprland = {
-      enable = true;
-      withUWSM = true;
-    };
-  };
 }

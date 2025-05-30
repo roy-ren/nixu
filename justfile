@@ -44,8 +44,9 @@ check:
 # Manually enter dev shell
 [group('dev')]
 dev:
-  nix develop
+  nix develop --command nu
 
+# set-proxy
 [group('dev')]
 set-proxy:
     sudo mkdir -p /run/systemd/system/nix-daemon.service.d/

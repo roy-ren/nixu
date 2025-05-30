@@ -5,14 +5,3 @@
     (fn: ./${fn})
     (filter (fn: fn != "default.nix") (attrNames (readDir ./.)));
 }
-# {
-#   imporst = [
-#     ./dotfiles
-#     ./hyprland
-#     ./neovim
-#     ./lsp-packages.nix
-#     ./packages.nix
-#     ./stylix.nix
-#   ];
-# }
-

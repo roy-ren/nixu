@@ -182,7 +182,7 @@ in {
       ''
         * {
           font-family: JetBrainsMono Nerd Font Mono;
-          font-size: 16px;
+          font-size: 22px;
           border-radius: 0px;
           border: none;
           min-height: 0px;
