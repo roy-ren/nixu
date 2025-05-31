@@ -14,7 +14,5 @@
     else "home"
   }/roy";
 
-  # home.backupFileExtensions = ".bak";
-
   home.stateVersion = "25.05";
 }
