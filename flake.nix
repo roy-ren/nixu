@@ -14,7 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
-    # nixos-unified.url = "github:srid/nixos-unified";
 
     # nix darwin
     nix-darwin = {
@@ -23,7 +22,6 @@
     };
 
     # nixos
-    hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
 
     # ThinkPad X1 Carbon hardware

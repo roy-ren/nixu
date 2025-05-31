@@ -14,8 +14,8 @@
     shell = pkgs.nushell;
   };
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+  # xdg.portal.enable = true;
+  # xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-hyprland];
 
   security.polkit.enable = true;
   services.dbus.enable = true;
