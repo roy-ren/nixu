@@ -9,6 +9,7 @@
       };
       modules = [
         ./hosts/nixpad.nix
+        inputs.auto-cpufreq.nixosModules.default
         inputs.nixos-hardware.nixosModules.lenovo-thinkpad-x1
       ];
     };

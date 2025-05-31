@@ -26,6 +26,11 @@
 
     # ThinkPad X1 Carbon hardware
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs @ {flake-parts, ...}:

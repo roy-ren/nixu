@@ -23,13 +23,4 @@
 
   # 蓝牙管理器服务（必需）
   services.dbus.enable = true;
-
-  systemd.user.services.bluetooth-autoconnect = {
-    description = "Auto-connect Bluetooth devices";
-    wantedBy = ["default.target"];
-    serviceConfig = {
-      ExecStart = "${pkgs.bash}/bin/bash -c '${./bluetooth-autoconnect.sh}'";
-      Restart = "on-failure";
-    };
-  };
 }
