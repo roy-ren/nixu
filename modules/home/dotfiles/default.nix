@@ -19,4 +19,5 @@ in {
     };
   };
   home.file.".zshrc".source = link "${dotfiles}/zsh/.zshrc";
+  home.file.".tmuxinator".source = link "${dotfiles}/tmuxinator";
 }

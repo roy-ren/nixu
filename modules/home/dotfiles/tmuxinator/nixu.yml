@@ -1,0 +1,10 @@
+name: " NixU"
+root: ~/nixu
+
+windows:
+  - flake:
+    - nvim
+  - run:
+    - clear
+  - show:
+    - clear

@@ -27,10 +27,9 @@
 
     # tmux
     "t" = "tmux";
+    "tk" = "tmux kill-server";
     "ta" = "tmux attach";
-
-    # stow
-    stowr = "stow -R . -v";
+    "tn" = "tmuxinator";
 
     # git
     lg = "lazygit";
