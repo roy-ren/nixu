@@ -18,7 +18,8 @@
   };
 
   # 选择壁纸（图片路径或URL）
-  stylix.image = ../../wallpapers/wallpaper.png;
+  # stylix.image = ../../wallpapers/wallpaper.png;
+  stylix.image = null;
 
   # 使用 base16 配色方案（例如从 https://github.com/tinted-theming/base16-schemes 选择）
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";

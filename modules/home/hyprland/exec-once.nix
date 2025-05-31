@@ -1,7 +1,8 @@
 {
   wayland.windowManager.hyprland.settings.exec-once = [
-    "fcitx5 -d -r "
+    "fcitx5 -rd"
     "fcitx5-remote -r"
     "waybar"
+    "hyprpaper"
   ];
 }
