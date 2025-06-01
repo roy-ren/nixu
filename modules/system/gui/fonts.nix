@@ -3,6 +3,8 @@
   config,
   ...
 }: {
+  fonts.fontDir.enable = true;
+
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans

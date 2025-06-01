@@ -5,13 +5,16 @@
 }: let
   hyprland = "${config.programs.hyprland.package}/bin/Hyprland";
   regreet = "${config.programs.regreet.package}/bin/regreet";
+
   hyprConf = pkgs.writeText "greetd-hyprland-config" ''
     exec-once = ${regreet}; hyprctl dispatch exit
+
     misc {
-        disable_hyprland_logo = true
-        disable_splash_rendering = true
-        disable_hyprland_qtutils_check = true
+      disable_hyprland_logo = true
+      disable_splash_rendering = true
+      disable_hyprland_qtutils_check = true
     }
+
     env = GTK_USE_PORTAL,0
     env = GDK_DEBUG,no-portals
   '';
@@ -44,7 +47,7 @@ in {
     cageArgs = ["-s" "-m" "last"];
     settings = {
       background = {
-        fit = "Contain"; # 背景图像的适应方式
+        fit = "Contain";
       };
       GTK = {
         application_prefer_dark_theme = true;
