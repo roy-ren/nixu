@@ -10,7 +10,6 @@ in {
   xdg = {
     enable = true;
     configFile = {
-      # "tmux".source = link "${dotfiles}/tmux";
       "nvim".source = link "${dotfiles}/nvim";
       "nushell/custom".source = link "${nushellCustom}";
       "lazygit".source = link "${dotfiles}/lazygit";
