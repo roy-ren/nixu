@@ -57,6 +57,9 @@
 
     set -g set-clipboard on          # use system clipboard
     set -g status-position top       # macOS / darwin style
+
+    # 系统剪切板
+    bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "wl-copy"
   '';
 
   # On supported terminals, request focus events and pass them through to applications running in tmux.  boolean

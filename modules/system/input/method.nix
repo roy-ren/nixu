@@ -17,11 +17,4 @@
     XMODIFIERS = "@im=fcitx";
     SDL_IM_MODULE = "fcitx";
   };
-
-  fonts.packages = with pkgs; [
-    wqy_zenhei
-    noto-fonts
-    noto-fonts-cjk
-    source-han-sans
-  ];
 }

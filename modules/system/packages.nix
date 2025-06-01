@@ -5,9 +5,6 @@
     gcc
     lazygit
 
-    # wl-clipboard
-    wl-clipboard
-
     brightnessctl
     playerctl
 
