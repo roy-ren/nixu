@@ -20,6 +20,9 @@
     "sd_mod"
   ];
 
+  # Load XE Intel driver
+  boot.initrd.kernelModules = ["xe"];
+
   boot.kernelModules = ["kvm-intel"];
   boot.extraModulePackages = [];
   boot.kernelPackages = pkgs.linuxPackages_latest;

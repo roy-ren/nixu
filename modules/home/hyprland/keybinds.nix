@@ -4,6 +4,7 @@
     bind =
       [
         "$mod, F, exec, firefox"
+        "$mod, W, exec, zen"
         "$mod SHIFT, Q, killactive,"
         "SHIFT, escape, exec, ghostty"
         "Control_L ALT, F, fullscreen,"

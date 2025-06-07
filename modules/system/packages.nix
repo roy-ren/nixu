@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     git
     clang
@@ -10,5 +14,6 @@
 
     shadowsocks-rust
     nushell
+    inputs.zen-browser.packages.${pkgs.system}.default
   ];
 }

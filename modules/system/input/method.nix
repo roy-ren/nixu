@@ -8,6 +8,7 @@
       fcitx5-nord
       fcitx5-configtool
       fcitx5-lua
+      kdePackages.fcitx5-qt
     ];
   };
 
