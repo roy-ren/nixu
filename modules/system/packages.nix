@@ -15,7 +15,5 @@
     shadowsocks-rust
     nushell
     inputs.zen-browser.packages.${pkgs.system}.default
-
-    neovimWithClipboard
   ];
 }
