@@ -58,8 +58,12 @@
     set -g set-clipboard on          # use system clipboard
     set -g status-position top       # macOS / darwin style
 
-    # 系统剪切板
-    bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "wl-copy"
+    # 允许 tmux 将复制的内容直接发送到系统剪切板
+    bind-key y run "tmux save-buffer - | wl-copy"
+    bind-key p run "tmux paste-buffer"
+
+    # 在 tmux 中使用 Wayland 剪切板
+    bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
   '';
 
   # On supported terminals, request focus events and pass them through to applications running in tmux.  boolean

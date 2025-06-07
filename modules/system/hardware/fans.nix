@@ -28,23 +28,16 @@
 
   # 温和睿频控制
   boot.kernelParams = ["intel_pstate=passive"];
-  services.tlp.enable = false;
-
-  programs.auto-cpufreq = {
+  # 启用 tlp 进行电源管理和节能
+  services.tlp = {
     enable = true;
     settings = {
-      charger = {
-        # performance
-        governor = "ondemand";
-        turbo = "auto";
-      };
-
-      battery = {
-        governor = "powersave";
-        turbo = "auto";
-      };
+      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+      CPU_ENERGY_PERF_POLICY_ON_BAT = "balance_power";
+      CPU_BOOST_ON_BAT = 0;
     };
   };
+
   hardware.cpu.intel.updateMicrocode = true;
   environment.systemPackages = [pkgs.lm_sensors];
 }
