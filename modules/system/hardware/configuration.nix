@@ -20,8 +20,6 @@
     "sd_mod"
   ];
 
-  boot.kernelModules = ["kvm-intel"];
-  boot.extraModulePackages = [];
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   fileSystems."/" = {
